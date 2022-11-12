@@ -6,4 +6,4 @@ service: testing
 instance_class: F2
 
 env_variables:
-  DATABASE_URL: ""
+  DATABASE_URL: "postgresql://user:$bgJ2hFlZ4$dV5mN@34.68.149.174:5432/postgres"
