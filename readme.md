@@ -1,5 +1,4 @@
 # Introduction to GCP
-A demo repository for the talk: Google Techverse 2020 - Getting Started with GCP
 
 This is a sample repository that you can refer to when building projects that needs to be deployed to Google App Engine. The sample project used in this repository is directly copied from the sample app from the FAST API documentation. [LINK](https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_8_3)
 
