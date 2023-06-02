@@ -20,7 +20,7 @@ def get_db():
 
 @app.get("/")
 def greetings():
-    return '<h1>Hello from the other side</h1>'
+    return '<h1>Hello TUPians!</h1>'
 
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
