@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "dev": "uvicorn sql_app.main:app --reload",
-    "start": "gunicorn -w 4 -k uvicorn.workers.UvicornWorker --bind :$PORT sql_app.main:app",
-    "deploy": "gcloud app deploy app.yaml"
+    "dev": "uvicorn main:app --reload",
+    "start": "gunicorn -w 4 -k uvicorn.workers.UvicornWorker --bind :$PORT main:app",
+    "deploy": "gcloud app deploy app.yaml",
+    "migrate": "alembic upgrade head",
+    "generate-migration": "alembic revision --autogenerate -m 'fix'"
   }
 }
